@@ -12,7 +12,7 @@ def lambda_handler(event, context):
                         print(instance.id)
                         client = boto3.client('elbv2')
                         response = client.register_targets(
-                            TargetGroupArn='arn:aws:elasticloadbalancing:ap-south-1:079859149351:targetgroup/auto-register/402e5d8306f3dd46',
+                            TargetGroupArn='arn:',
                             Targets=[
                                 {
                                     'Id': trigger_instance,
